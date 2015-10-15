@@ -1,16 +1,25 @@
-#include <EEPROM.h>
-
+/* experiment för att testa och lära hur man läser analog och digital input, samt sätter en digital utgång 
+ och skriver ut ett analogt värde. 
+ 
+komponenter
+* Arduino R3
+* tinkerkit sensorshield
+* tinkerkit LED
+* tinkerkit pushbutton
+* tinkerkit temperatur sensor
+ Lars Lindmark, Design Greenhouse 2015
+*/
 
 // constants won't change. They're used here to
-const int sensorIn = A0;     // temperatursensor (middle terminal) connected to tinkerkit O0
-const int buttonPin = A1;     // the number of the pushbutton pin
-const int ledO0 = 11;      // select the pin for the tinkerLED
-const int pin13 = 13;      // select the pin for the outputLED
+const int sensorIn = A0;  // temperatursensor (middle terminal) connected to tinkerkit O0
+const int buttonPin = A1; // the number of the pushbutton pin
+const int ledO0 = 11;     // select the pin for the tinkerLED
+const int pin13 = 13;     // select the pin for the outputLED
 
 // variables will change:
-int sensorValue = 0;  // variable to store the value coming from the tempsensor
-int buttonState = 0;         // variable for reading the pushbutton status
-int outputValue = 0;        // value output to the PWM (analog out)
+int sensorValue = 0;      // variable to store the value coming from the tempsensor
+int buttonState = 0;      // variable for reading the pushbutton status
+int outputValue = 0;      // value output to the PWM (analog out)
 
 void setup() {
   // put your setup code here, to run once:
