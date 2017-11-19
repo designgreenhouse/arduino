@@ -1,5 +1,5 @@
 /* experiment för att testa och lära hur man läser analog och digital input, samt sätter en digital utgång 
- och skriver ut ett analogt värde. 
+ och skriver ut ett analogt värde. Kopplar till github
  
 komponenter
 * Arduino R3
