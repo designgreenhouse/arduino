@@ -1,0 +1,7 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Disabled"
+    "arduino.path": "/Applications",
+    "arduino.additionalUrls": "",
+    "arduino.logLevel": "info", 
+    "arduino.enableUSBDetection": true
+}
